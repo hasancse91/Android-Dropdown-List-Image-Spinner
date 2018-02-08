@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Spinner Practice</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="select_any_one">Select Any One</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="price">Price: %1$d BDT</string>
+</resources>
