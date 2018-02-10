@@ -1,6 +1,8 @@
 package com.hellohasan.spinnerpractice;
 
-public class Food {
+import java.io.Serializable;
+
+public class Food implements Serializable{
     private String name;
     private int price;
     private String image;

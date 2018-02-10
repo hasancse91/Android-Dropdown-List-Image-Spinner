@@ -1,6 +1,7 @@
 package com.hellohasan.spinnerpractice;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -55,6 +56,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> 
                     holder.favoriteIcon.setImageResource(R.drawable.ic_favorite_solid_24dp);
                     food.setFavorite(true);
                 }
+            }
+        });
+
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, FoodDetailsActivity.class);
+                intent.putExtra("food", food);
+                context.startActivity(intent);
             }
         });
 
